@@ -29,9 +29,9 @@ const app = {};
 //     console.log('error was', err);
 // });
 
-data.delete('test', 'newFile', (err) => {
-    console.log('error is', err);
-});
+// data.delete('test', 'newFile', (err) => {
+//     console.log('error is', err);
+// });
 // configuration
 
 // create server
