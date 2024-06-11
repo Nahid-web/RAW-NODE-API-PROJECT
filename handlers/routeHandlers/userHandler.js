@@ -204,14 +204,14 @@ handler._users.delete = (requestProperties, callback) => {
         requestProperties.queryStringObject.phone.trim().length === 11
             ? requestProperties.queryStringObject.phone
             : false;
-    console.log(phone);
+
+    console.log(requestProperties.queryStringObject.phone);
     if (phone) {
         // verify token
         const token =            typeof requestProperties.headerObject.token === 'string'
                 ? requestProperties.headerObject.token
                 : false;
         tokenHandler._token.verify(token, phone, (tokenId) => {
-            console.log(tokenId);
             if (tokenId) {
                 // lookup the user
                 data.read('users', phone, (err1, userData) => {
