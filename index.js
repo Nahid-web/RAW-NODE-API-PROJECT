@@ -12,26 +12,10 @@ const http = require('http');
 const { handleReqRes } = require('./helpers/handleRegRes');
 const environmentToExport = require('./helpers/environments');
 const data = require('./lib/data');
-
+const { sendTwilioSms } = require('./helpers/notifications');
 // App object -module scattering
 const app = {};
 
-// testing file system
-// data.create('test', 'newFile', {name : 'Nahid', realigious: 'Islam'}, (err)=>{
-//     console.log(`error was `, err);
-// })
-
-// data.read('test', 'newFile', (err, result) => {
-//     console.log(err, result);
-// });
-
-// data.update('test', 'newFile', { name: 'Walifa', realigius: 'Islam' }, (err) => {
-//     console.log('error was', err);
-// });
-
-// data.delete('test', 'newFile', (err) => {
-//     console.log('error is', err);
-// });
 // configuration
 
 // create server
