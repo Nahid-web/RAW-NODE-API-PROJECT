@@ -1,0 +1,11 @@
+{
+  "id": "0ozthqx7nq2wszim82ad",
+  "userPhone": "01711111111",
+  "protocol": "http",
+  "url": "google.com",
+  "method": "GET",
+  "successCodes": [200, 201, 301],
+  "timeoutSeconds": 2,
+  "state": "up",
+  "lastChecked": 1719287864122
+}
